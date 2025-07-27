@@ -45,7 +45,7 @@ const AnimalConfigs = {
             'assets/images/rhino_svg/rhinoceros_09.svg',
             'assets/images/rhino_svg/rhinoceros_10.svg'
         ],
-        interval: 6000
+        interval: 5000
     },
     octopus: {
         imageId: 'octopusImage',
@@ -61,7 +61,7 @@ const AnimalConfigs = {
             'assets/images/octopus_svg/octopus_09.svg',
             'assets/images/octopus_svg/octopus_10.svg'
         ],
-        interval: 6000
+        interval: 5000
     },
     elephant: {
         imageId: 'elephantImage',
@@ -77,6 +77,6 @@ const AnimalConfigs = {
             'assets/images/elephant_svg/elephant_09.svg',
             'assets/images/elephant_svg/elephant_10.svg'
         ],
-        interval: 6000
+        interval: 5000
     }
 };
