@@ -26,13 +26,16 @@
     <header class="p-8">
         <div class="flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <img src="assets/images/logo.svg" alt="Lukket AI" class="h-12">
+                <img src="assets/images/rhino_svg/rhinoceros_05.svg" alt="Lukket AI" class="h-12 font-bold">
                 <div>
                     <h1 class="text-3xl font-bold text-black">Lukket AI</h1>
                     <p class="text-sm text-gray-600 mt-1 font-mono">/closed</p>
                 </div>
             </div>
             <nav class="flex gap-4">
+                <a href="index.html" class="px-6 py-2 border border-black bg-black text-white font-medium">
+                    Home
+                </a>
                 <a href="consultancy.html" class="px-6 py-2 border border-black text-black hover:bg-black hover:text-white transition-colors duration-200 font-medium">
                     Consultancy
                 </a>
@@ -63,43 +66,10 @@
     </main>
 
 
+    <script src="assets/js/animal-animations.js"></script>
     <script>
-        // Rhino image cycling animation
-        const rhinoImages = [
-            'assets/images/rhino_svg/rhinoceros_01.svg',
-            'assets/images/rhino_svg/rhinoceros_02.svg',
-            'assets/images/rhino_svg/rhinoceros_03.svg',
-            'assets/images/rhino_svg/rhinoceros_04.svg',
-            'assets/images/rhino_svg/rhinoceros_05.svg',
-            'assets/images/rhino_svg/rhinoceros_06.svg',
-            'assets/images/rhino_svg/rhinoceros_07.svg',
-            'assets/images/rhino_svg/rhinoceros_08.svg',
-            'assets/images/rhino_svg/rhinoceros_09.svg',
-            'assets/images/rhino_svg/rhinoceros_10.svg'
-        ];
-        
-        let currentImageIndex = 0;
-        const rhinoImageElement = document.getElementById('rhinoImage');
-        
-        function cycleRhinoImages() {
-            // Fade out
-            rhinoImageElement.style.opacity = '0';
-            
-            setTimeout(() => {
-                // Change image
-                currentImageIndex = (currentImageIndex + 1) % rhinoImages.length;
-                rhinoImageElement.src = rhinoImages[currentImageIndex];
-                
-                // Fade in
-                rhinoImageElement.style.opacity = '1';
-            }, 150); // Half of the transition duration
-        }
-        
-        // Start the animation when the page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            // Cycle through images every 6000ms
-            setInterval(cycleRhinoImages, 6000);
-        });
+        // Initialize rhino animation
+        createAnimalAnimation(AnimalConfigs.rhino);
     </script>
 </body>
 </html>
