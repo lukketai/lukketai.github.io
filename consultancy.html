@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultancy - Lukket AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-black font-sans min-h-screen flex flex-col">
+    <!-- Header with Logo and Navigation -->
+    <header class="p-8">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="assets/images/logo.svg" alt="Lukket AI" class="h-12">
+                    <div>
+                        <h1 class="text-3xl font-bold text-black">Lukket AI</h1>
+                        <p class="text-sm text-gray-600 mt-1 font-mono">/closed</p>
+                    </div>
+                </a>
+            </div>
+            <nav class="flex gap-4">
+                <a href="consultancy.html" class="px-6 py-2 border border-black bg-black text-white font-medium">
+                    Consultancy
+                </a>
+                <a href="about.html" class="px-6 py-2 border border-black text-black hover:bg-black hover:text-white transition-colors duration-200 font-medium">
+                    About Us
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex items-center justify-center px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-black mb-8">Consultancy</h2>
+            <p class="text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
+                We can help you in building agents or models that solve humans everyday tasks
+            </p>
+        </div>
+    </main>
+
+</body>
+</html>
