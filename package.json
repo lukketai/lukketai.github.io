@@ -1,0 +1,12 @@
+{
+  "name": "lukketai-website",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -i src/input.css -o assets/css/output.css --minify",
+    "dev": "tailwindcss -i src/input.css -o assets/css/output.css --watch"
+  },
+  "packageManager": "pnpm@10.26.2",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
